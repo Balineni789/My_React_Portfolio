@@ -1,0 +1,120 @@
+
+.mywork {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 80px; 
+    margin: 80px 170px;
+}
+
+.R-Arrow2 {
+    height: 32px; 
+    width: 32px;
+    position: relative;
+    right: 5px;
+    bottom: -5px;
+}
+
+.mywork-title {
+    position: relative; 
+}
+
+.mywork-title h1 {
+    padding: 0px 30px;
+    font-size: 80px; 
+    font-weight: 600;
+}
+
+.mywork-title img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+}
+
+.mywork-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; 
+    gap: 40px; 
+}
+
+.mywork-container img {
+    box-sizing: border-box;
+    width: 100%;                
+    max-width: 420px;         
+    height: 200px;
+    transition: 0.3s;
+    cursor: pointer;
+    object-fit: cover;          
+    border-radius: 5px;        
+    display: block;
+    margin: 0 auto;           
+}
+
+.mywork-container img:hover {
+    transform: scale(1.10);
+    border: 2px solid fuchsia;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.mywork-showmore {
+    display: flex;
+    gap: 15px;
+    border: 2px solid white;
+    border-radius: 50px;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 50px;
+    transition: 0.6s;
+    cursor: pointer;
+    position: relative;
+    bottom: 30px;
+}
+
+.mywork-showmore:hover {
+    gap: 30px;
+    transition: 0.6s;
+    border: 2px solid fuchsia;
+}
+
+.mywork-showmore a {
+    text-decoration: none;
+}
+
+
+
+@media (max-width: 768px) {
+    .mywork-title h1 {
+        font-size: 40px;
+        padding: 0px 20px;
+        white-space: nowrap;
+    }
+
+    .mywork {
+        margin: 60px 20px;
+        gap: 60px;
+    }
+    
+    .mywork-container {
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+    
+    .mywork-container img {
+        width: 100%;
+        height: 200px;
+    }
+    
+    .mywork-showmore {
+        font-size: 16px;
+        padding: 12px 24px;
+    }
+
+    .mywork-showmore img {
+        position: relative;
+        top: 6px;
+    }
+}

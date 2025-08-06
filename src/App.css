@@ -1,0 +1,49 @@
+
+h1 {
+    background-color: lightblue;
+    text-align: center;
+    font-weight: bold;
+    font-size: 32px;
+    padding: 5px;
+}
+
+.H3 {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin: 5px;
+}
+
+.Form {
+    margin: 10px;
+    text-align: center;
+    background-color: lightgrey;
+}
+
+input {
+   text-align: center;
+   font-size: 18px;
+   font-weight: bold;
+   color: lightslategray;
+   border: 2px solid blue;
+   border-radius: 8px;
+   margin: 10px;
+   padding: 5px;
+}
+
+button {
+   font-size: 18px;
+   font-weight: bold;
+   color: red;
+   border: 2px solid blue;
+   border-radius: 8px;
+   padding: 6px;
+   margin: 8px;
+   cursor: pointer;
+}
+
+button:hover {
+    background-color: lightblue;
+}
+
+

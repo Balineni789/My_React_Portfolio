@@ -1,0 +1,12 @@
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    color: white;
+    background-color: #161513;
+    /* background: linear-gradient(265deg, orange 0.35%, violet 102.05%); */
+}

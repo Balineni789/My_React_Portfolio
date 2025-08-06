@@ -1,0 +1,117 @@
+
+.Web {
+  background: linear-gradient(270deg, #DF8908 10%, #bf34ff 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 17px;
+}
+
+
+
+@media (max-width: 768px) {
+
+.Web {
+  background: linear-gradient(270deg, #DF8908 10%, #bf34ff 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 17px;
+ }
+
+  footer {
+    padding: 2rem 1rem !important;
+  }
+  
+  footer .max-w-6xl {
+    max-width: 100% !important;
+    padding: 0 0.5rem;
+  }
+  
+  footer .grid {
+    grid-template-columns: 1fr !important;
+    gap: 2rem !important;
+    text-align: center;
+  }
+  
+  footer h3 {
+    font-size: 1.5rem !important;
+    margin-bottom: 1rem;
+  }
+  
+  footer h4 {
+    font-size: 1.25rem !important;
+    margin-bottom: 1rem;
+  }
+  
+  footer p[style*="fontSize:'17px'"] {
+    font-size: 15px !important;
+    line-height: 1.5;
+    margin-bottom: 1.5rem;
+  }
+  
+  footer nav {
+    align-items: center;
+    font-weight: 600;
+  }
+  
+  footer nav a {
+    font-size: 1rem;
+    padding: 0.5rem 0;
+  }
+  
+  footer .space-y-2 a {
+    justify-content: center;
+    font-size: 0.9rem;
+  }
+  
+  footer p[style*="lightblue"] {
+    font-size: 14px !important;
+    margin-left: 0 !important;
+    margin-top: 0.5rem !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+  }
+  
+  footer p[style*="lightblue"] img {
+    position: static !important;
+    top: auto !important;
+    left: auto !important;
+    margin-left: 0 !important;
+    height: 20px !important;
+    width: 20px !important;
+  }
+  
+  footer .border-t {
+    flex-direction: column !important;
+    gap: 1.5rem !important;
+    padding-top: 2rem !important;
+  }
+  
+  footer .flex.space-x-6 {
+    order: 1;
+    justify-content: center;
+    gap: 2rem !important;
+  }
+  
+  footer .text-gray-400.text-xl {
+    order: 2;
+    font-size: 0.9rem !important;
+    text-align: center;
+    line-height: 1.4;
+  }
+  
+  footer .text-center.mt-8 {
+    margin-top: 2rem !important;
+  }
+  
+  footer .text-center.mt-8 button {
+    font-size: 1rem !important;
+  }
+  
+  footer .text-center.mt-8 button span {
+    font-size: 15px !important;
+  }
+}

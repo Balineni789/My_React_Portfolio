@@ -1,0 +1,248 @@
+/* My Own Css
+.Input {
+   margin: 10px;
+   padding: 5px;
+   font-size: 18px;
+   font-weight: bold;
+   text-align: center;
+   border-radius: 10px;
+   border: 2px solid red;
+}
+
+.btn-AddTask {
+   width: 8%;
+   padding: 5px;
+   cursor: pointer;
+   font-size: 18px;
+   font-weight: bold;
+   border-radius: 10px;
+   border: 2px solid red;
+}
+
+.Input1 {
+   margin: 10px;
+   width: 300px;
+   padding: 5px;
+   font-size: 18px;
+   font-weight: bold;
+   text-align: center;
+   border-radius: 10px;
+   border: 2px solid grey;
+}
+
+button {
+   padding: 5px;
+   cursor: pointer;
+   margin-left: 10px;
+   font-size: 18px;
+   font-weight: bold;
+   border-radius: 10px;
+   border: 2px solid red;
+}
+
+.Edit {
+   padding: 5px;
+   cursor: pointer;
+   font-size: 18px;
+   font-weight: bold;
+   border-radius: 10px;
+   border: 2px solid blue;
+}
+
+.Save {
+   padding: 5px;
+   cursor: pointer;
+   font-size: 18px;
+   font-weight: bold;
+   border-radius: 10px;
+   border: 2px solid blue;
+}
+
+.Ul {
+   padding: 6px;
+   max-width: 500px;
+   margin-top: 10px;
+   border-radius: 10px;
+   border: 2px solid grey;
+}
+
+ */
+
+
+
+ /* TodoList1.css */
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  background-color: #f5f5f5;
+}
+
+.todo-container {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 90%;
+  max-width: 600px;
+  text-align: center;
+}
+
+.Input {
+  margin: 10px;
+  padding: 12px;
+  font-size: 16px;
+  width: 70%;
+  text-align: center;
+  border-radius: 5px;
+  border: 2px solid #ff6b6b;
+  transition: all 0.3s ease;
+}
+
+.Input:focus {
+  outline: none;
+  border-color: #ff4757;
+  box-shadow: 0 0 5px rgba(255, 107, 107, 0.5);
+}
+
+.btn-AddTask {
+  padding: 12px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  background-color: #ff6b6b;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+  margin-left: 5px;
+}
+
+.btn-AddTask:hover {
+  background-color: #ff4757;
+  transform: translateY(-2px);
+}
+
+.Input1 {
+  margin: 10px;
+  padding: 10px;
+  width: 60%;
+  font-size: 16px;
+  text-align: left;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  background-color: #f8f9fa;
+  display: inline-block;
+}
+
+button {
+  padding: 8px 15px;
+  cursor: pointer;
+  margin-left: 5px;
+  font-size: 14px;
+  border-radius: 5px;
+  border: none;
+  transition: all 0.3s ease;
+}
+
+.Edit {
+  background-color: #4da6ff;
+  color: white;
+}
+
+.Edit:hover {
+  background-color: #3395ff;
+  transform: translateY(-1px);
+}
+
+.Save {
+  background-color: #2ecc71;
+  color: white;
+}
+
+.Save:hover {
+  background-color: #27ae60;
+  transform: translateY(-1px);
+}
+
+.Delete {
+  background-color: #ff6b6b;
+  color: white;
+}
+
+.Delete:hover {
+  background-color: #ff4757;
+  transform: translateY(-1px);
+}
+
+button[onClick="Cancel"] {
+  background-color: #95a5a6;
+  color: white;
+}
+
+button[onClick="Cancel"]:hover {
+  background-color: #7f8c8d;
+  transform: translateY(-1px);
+}
+
+.Ul {
+  padding: 15px;
+  margin: 20px auto;
+  border-radius: 5px;
+  list-style-type: none;
+  width: 100%;
+}
+
+.Ul li {
+  margin: 10px 0;
+  padding: 12px;
+  border-radius: 5px;
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.Ul li > div {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.task-content {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.task-actions {
+  display: flex;
+  margin-left: 10px;
+}
+
+@media (max-width: 600px) {
+  .Input {
+    width: 60%;
+  }
+  
+  .btn-AddTask {
+    width: 30%;
+    margin-top: 10px;
+  }
+  
+  .Ul li {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .task-actions {
+    margin-left: 0;
+    margin-top: 10px;
+    width: 100%;
+    justify-content: flex-end;
+  }
+}
