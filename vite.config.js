@@ -4,6 +4,6 @@ import react from '@vitejs/plugin-react'
 
 export default defineConfig({
   plugins: [react()],
-   base: "/Testing_React"
+   base: "/My_React_Portfolio"
 });
 
