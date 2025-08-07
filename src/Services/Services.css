@@ -226,6 +226,50 @@
 }
 
 
+.services-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-bottom: 80px;
+    align-items: start; 
+}
+
+.service-card {
+    background: #2a2a2a;
+    border-radius: 15px;
+    padding: 30px;
+    border: 2px solid #333;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    min-height: 400px;
+    height: auto;
+}
+
+.service-details {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease;
+    opacity: 0;
+    margin-bottom: 0; 
+}
+
+.service-details.expanded {
+    max-height: 1000px;
+    opacity: 1;
+    transition: max-height 0.5s ease, opacity 0.5s ease 0.2s;
+    margin-bottom: 0; 
+}
+
+.read-more-btn {
+    margin-top: 20px; 
+}
+
+
 
 @media (max-width: 768px) {
     .Theme {
